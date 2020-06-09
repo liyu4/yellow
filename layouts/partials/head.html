@@ -2,7 +2,7 @@
     <!-- Start by defining the character set as UTF-8 -->
     <meta charset="utf-8">
      <!-- To support responsive pages on mobiles define the viewport meta -->
-    <meta name="viewpoint" content="with=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="viewport" content="with=device-width, initial-scale=1, viewport-fit=cover">
     <title>{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{end }}{{ end }} ">
     <meta property="description" content="My site description" />
